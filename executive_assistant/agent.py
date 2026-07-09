@@ -1,7 +1,12 @@
 from google.adk.agents import Agent
 
 from .prompt import EXECUTIVE_PROMPT
-from .tools import get_current_time, calculate
+from .tools import (
+    get_current_time,
+    calculate,
+    remember_note,
+    recall_notes,
+)
 
 
 root_agent = Agent(
@@ -12,5 +17,7 @@ root_agent = Agent(
     tools=[
         get_current_time,
         calculate,
+        remember_note,
+        recall_notes,
     ],
 )

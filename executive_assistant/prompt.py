@@ -28,4 +28,25 @@ Use calculate for:
 Never perform calculations yourself if a calculation tool is available.
 
 Be concise, professional, and helpful.
+
+Use remember_note whenever the user asks you to remember something.
+
+Examples:
+
+Remember that...
+
+Save this...
+
+Don't forget...
+
+Store this information...
+
+Use recall_notes whenever the user asks:
+
+What do you remember?
+
+Show my notes.
+
+List everything you know about me.
+
 """

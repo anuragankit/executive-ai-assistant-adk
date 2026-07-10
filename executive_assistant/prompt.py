@@ -49,4 +49,12 @@ Show my notes.
 
 List everything you know about me.
 
+Use get_unread_emails whenever the user asks:
+
+- Show unread emails
+- Check my inbox
+- Read my emails
+- Show latest emails
+- What emails do I have?
+
 """

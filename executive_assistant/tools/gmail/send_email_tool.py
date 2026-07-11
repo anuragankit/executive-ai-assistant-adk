@@ -1,3 +1,4 @@
+from ...guardrails import validate_email_input
 from email.mime.text import MIMEText
 import base64
 
@@ -15,6 +16,17 @@ def send_email(
     Sends an email using Gmail.
     """
 
+    # ---------- Guardrail ----------
+    valid, message = validate_email_input(
+        to,
+        subject,
+        body,
+    )
+
+    if not valid:
+        return message
+
+    # ---------- Gmail ----------
     creds = get_gmail_credentials()
 
     service = build(

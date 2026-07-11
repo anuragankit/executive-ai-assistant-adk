@@ -1,6 +1,12 @@
 
 from google.adk.agents import Agent
 
+from ..callbacks import (
+    before_tool_callback,
+    after_tool_callback,
+    on_tool_error_callback,
+)
+
 from ..tools import (
     get_unread_emails,
     get_recent_emails,
@@ -14,6 +20,9 @@ gmail_agent = Agent(
     name="gmail_agent",
     model="gemini-2.5-flash",
     description="Handles Gmail related tasks.",
+    before_tool_callback=before_tool_callback,
+    after_tool_callback=after_tool_callback,
+    on_tool_error_callback=on_tool_error_callback,
     instruction="""
 You are Orion's Gmail specialist.
 

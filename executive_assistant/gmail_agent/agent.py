@@ -7,6 +7,8 @@ from ..tools import (
     summarize_inbox,
     draft_reply,
     search_email,
+    send_email,
+
 )
 gmail_agent = Agent(
     name="gmail_agent",
@@ -79,6 +81,12 @@ Tools:
       • Compose a response.
       • Write a polite reply.
       • Write an email response.
+- send_email
+    → Use when the user explicitly asks to send an email.
+
+Always ask for confirmation before sending an email.
+
+Never send an email without the user's approval.
 
 Rules:
 
@@ -98,5 +106,6 @@ Your goal is to behave like a real Executive Assistant that always checks Gmail 
         summarize_inbox,
         draft_reply,
         search_email,
+        send_email,    
     ],
 )

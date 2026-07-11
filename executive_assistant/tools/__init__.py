@@ -7,4 +7,6 @@ from .gmail import (
     summarize_inbox,
     draft_reply,
     search_email,
+    send_email,
+
 )

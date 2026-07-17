@@ -163,9 +163,9 @@ A `token.json` file is generated after successful authentication and is used for
 Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/<repository-name>.git
+git clone https://github.com/anuragankit/executive-ai-assistant-adk.git
 
-cd <repository-name>
+cd executive-ai-assistant-adk
 ```
 
 Create a virtual environment
@@ -192,20 +192,6 @@ Install dependencies
 
 ```bash
 pip install -r requirements.txt
-```
-
----
-
-## Environment Variables
-
-Create a `.env` file.
-
-Example
-
-```env
-GOOGLE_API_KEY=YOUR_API_KEY
-PROJECT_ID=YOUR_PROJECT_ID
-LOCATION=us-central1
 ```
 
 ---

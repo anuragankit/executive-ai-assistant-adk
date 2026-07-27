@@ -1,4 +1,4 @@
-# Enterprise AI Executive Assistant
+# Enterprise AI Assistant
 
 An enterprise-grade AI Executive Assistant built using Google's Agent Development Kit (ADK). The assistant can understand natural language requests, access Gmail, perform utility tasks, maintain persistent conversation memory, and orchestrate multiple specialized agents to complete user requests.
 
